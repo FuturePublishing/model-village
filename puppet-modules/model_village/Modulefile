@@ -1,0 +1,8 @@
+name 'future-model_village'
+version '1.0.0'
+source 'http://gitlab.futurenet.com/opsgroup/puppet3'
+author 'future'
+license 'Apache License, Version 2.0'
+summary 'model_village'
+description 'Installs and configures model_village'
+project_page 'http://gitlab.futurenet.com/opsgroup/puppet3'

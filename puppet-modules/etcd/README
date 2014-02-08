@@ -1,0 +1,27 @@
+../modules/etcd
+======
+
+../modules/etcd puppet hiera module.
+
+usage
+=====
+
+To see all available rake tasks:
+
+  rake -T
+
+To validate your puppet manifests:
+
+  rake validate
+
+To lint your puppet manifests:
+
+  rake lint
+
+To package your puppet module, to upload somewhere (e.g. Forge):
+
+  rake package
+
+To generate module documentation:
+
+  rake doc

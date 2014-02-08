@@ -1,0 +1,7 @@
+---
+#
+# This doesn't work b/c skaro requires the open_java module
+# which doesn't exist in P3. Yet. On the other hand, the fact
+# that it fails means it's, er, working. So yay. Probably.
+#
+pub.village.future.dom.ain: skaro.future.net.uk

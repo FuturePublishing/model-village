@@ -1,0 +1,34 @@
+---
+:backends:
+  - yaml
+  - puppet
+  - etcd
+
+:logger: console
+
+:hierarchy:
+  - "nodes/%{fqdn}"
+  - "%{environment}"
+  - "%{location}"
+  - "%{calling_module}"
+  - "%{calling_class}/%{title}"
+  - "%{calling_module}/%{title}"
+  - common
+
+:yaml:
+   :datadir: /etc/puppet/hieradata
+
+:puppet:
+   :datasource: data
+
+:http:
+  :host: 127.0.0.1
+  :port: 4001
+  :paths:
+    - /config/%{fqdn}
+    - /config/%{environment}
+    - /config/%{location}
+    - /config/%{calling_class}
+    - /config/%{calling_module}
+    - /config/common
+
